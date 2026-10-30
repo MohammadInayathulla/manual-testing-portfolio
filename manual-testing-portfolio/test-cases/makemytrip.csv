@@ -1,0 +1,85 @@
+"ID","Module","Scenario","Preconditions","Steps","Test Data","Expected","Actual","Status","Priority","Type"
+"MMT-INT-01","Flight booking","Booked flight appears in Bookings","Registered User A; a payment method available for booking; internet connected","1. Log in as User A
+2. Click Flights
+3. Book a flight
+4. Go to Bookings
+5. Check the flight is booked
+6. Log out A","Flight: any","Flight booking is listed in Bookings","","Not Run","High","Integration"
+"MMT-INT-02","Hotel, bus & train","Booked hotel appears in My Trips","Registered User A; a payment method available for booking; internet connected","1. Log in as User A
+2. Click Hotels
+3. Book a hotel
+4. Confirm
+5. Verify the booking in My Trips
+6. Log out","Hotel: any","Hotel booking appears in My Trips","","Not Run","High","Integration"
+"MMT-INT-03","Cancellations, changes & refunds","Cancelling a flight updates the booking status","Registered User A; a payment method available for booking; internet connected","1. Log in as User A
+2. Book a flight
+3. Click Cancel
+4. Verify booking status
+5. Log out A","Flight: any","Booking status changes to Cancelled","","Not Run","High","Integration"
+"MMT-INT-04","Hotel, bus & train","Booked bus appears in My Trips","Registered User A; a payment method available for booking; internet connected","1. Log in as User A
+2. Click Bus
+3. Book a bus
+4. Confirm
+5. Check My Trips
+6. Log out A","Bus: any","Bus booking appears in My Trips","","Not Run","Medium","Integration"
+"MMT-INT-05","Hotel, bus & train","PNR status for a booked train","Registered User A; a payment method available for booking; internet connected","1. Log in as User A
+2. Click Trains
+3. Book a train
+4. PNR is generated
+5. Go to PNR status
+6. Enter the valid PNR
+7. Check details
+8. Log out A","Valid PNR","PNR details appear","","Not Run","Medium","Integration"
+"MMT-INT-06","Promos & fare display","Promo code discount on a flight","Registered User A; a payment method available for booking; internet connected","1. Log in as User A
+2. Book a flight
+3. Enter promo code
+4. Verify the discount on the amount
+5. Log out A","Valid promo code","Discount is applied on the amount","","Not Run","High","Integration"
+"MMT-INT-07","Cancellations, changes & refunds","Reschedule a confirmed flight","Registered User A; a payment method available for booking; internet connected","1. Log in as User A
+2. Go to My Trips
+3. Select a confirmed flight booking
+4. Click Reschedule
+5. Enter new date and time
+6. Confirm
+7. Check My Trips
+8. Log out","New date and time","Flight is rescheduled in My Trips","","Not Run","High","Integration"
+"MMT-INT-08","Cancellations, changes & refunds","Cancel a confirmed hotel booking","Registered User A; a payment method available for booking; internet connected","1. Log in as User A
+2. Go to My Trips
+3. Select a confirmed hotel booking
+4. Click Cancel
+5. Verify the booking in My Trips
+6. Log out","Confirmed hotel booking","Booking is shown as cancelled in My Trips","","Not Run","Medium","Integration"
+"MMT-INT-09","Flight booking","Airport cab add-on shows under the same trip","Registered User A; a payment method available for booking; internet connected","1. Log in as User A
+2. Book a flight
+3. During checkout go to add-ons
+4. Select Airport Cab at destination
+5. Choose cab
+6. Confirm cab
+7. Verify both bookings in My Trips
+8. Log out","Add-on: airport cab","Flight and cab bookings appear under the same trip in My Trips","","Not Run","Medium","Integration"
+"MMT-INT-10","Cancellations, changes & refunds","Refund status after cancellation","Registered User A; a payment method available for booking; internet connected","1. Log in as User A
+2. Go to My Trips
+3. Select a booking
+4. Cancel it
+5. Confirm
+6. Go to Transactions
+7. Check refund status
+8. Log out","Any cancellable booking","Transactions shows the refund status","","Not Run","High","Integration"
+"MMT-USA-01","Registration & login","Welcome screen communicates the app's purpose","App installed; internet connected (checked on MakeMyTrip and Goibibo)","1. Open the app for the first time
+2. Review the welcome screen","Apps: MakeMyTrip, Goibibo","Welcome screen clearly communicates the app's purpose","","Not Run","Low","Usability"
+"MMT-USA-02","Registration & login","Keypad activates when entering the phone number","App installed; internet connected (checked on MakeMyTrip and Goibibo)","1. Tap the phone number field","Apps: MakeMyTrip, Goibibo","Keypad activates automatically","","Not Run","Medium","Usability"
+"MMT-USA-03","Registration & login","OTP auto-fills from SMS","App installed; internet connected (checked on MakeMyTrip and Goibibo)","1. Request an OTP
+2. Wait for the SMS","Apps: MakeMyTrip, Goibibo","OTP auto-fills from the SMS","","Not Run","Medium","Usability"
+"MMT-USA-04","Registration & login","Resend OTP option is visible","App installed; internet connected (checked on MakeMyTrip and Goibibo)","1. Request an OTP
+2. Look for Resend OTP","Apps: MakeMyTrip, Goibibo","Resend OTP option is visible","","Not Run","Medium","Usability"
+"MMT-USA-05","Home & search","Home screen shows all travel categories","App installed; internet connected (checked on MakeMyTrip and Goibibo)","1. Log in
+2. Open the home screen","Apps: MakeMyTrip, Goibibo","Flights, Hotels, Trains, Buses etc. are clearly displayed","","Not Run","Medium","Usability"
+"MMT-USA-06","Home & search","Search bar is easily accessible","App installed; internet connected (checked on MakeMyTrip and Goibibo)","1. Open the home screen
+2. Look for the search bar","Apps: MakeMyTrip, Goibibo","Search bar is easily accessible","","Not Run","Medium","Usability"
+"MMT-USA-07","Home & search","Toggle buttons work effectively","App installed; internet connected (checked on MakeMyTrip and Goibibo)","1. Use each toggle button on the search form","Apps: MakeMyTrip, Goibibo","Toggle buttons work effectively","","Not Run","Low","Usability"
+"MMT-USA-08","Home & search","Search results load quickly with a progress indicator","App installed; internet connected (checked on MakeMyTrip and Goibibo)","1. Search for a flight
+2. Observe loading","Apps: MakeMyTrip, Goibibo","Results load quickly and a progress bar is shown while loading","","Not Run","Medium","Usability"
+"MMT-USA-09","Flight booking","Flight result card shows the key details","App installed; internet connected (checked on MakeMyTrip and Goibibo)","1. Search for a flight
+2. Review a result card","Apps: MakeMyTrip, Goibibo","Card clearly shows airline name, logo, departure time, arrival time, duration and fare","","Not Run","High","Usability"
+"MMT-USA-10","Promos & fare display","Fare summary shows a clear breakdown","App installed; internet connected (checked on MakeMyTrip and Goibibo)","1. Select a flight
+2. Open the fare summary","Apps: MakeMyTrip, Goibibo","Fare summary clearly breaks down fare, taxes, convenience fee and any add-ons","","Not Run","High","Usability"

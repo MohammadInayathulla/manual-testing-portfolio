@@ -1,0 +1,60 @@
+"ID","Module","Scenario","Preconditions","Steps","Test Data","Expected","Actual","Status","Priority","Type"
+"FB-FUN-01","Login - email","Email field accepts a valid registered email","A registered Facebook account; internet connected","1. Open the login page
+2. Enter a valid registered email","Valid registered email","Email field accepts the email","","Not Run","High","Functional"
+"FB-FUN-02","Login - email","Email field rejects an invalid email","A registered Facebook account; internet connected","1. Open the login page
+2. Enter an invalid email","Invalid email","Email field does not accept the invalid email","","Not Run","High","Functional"
+"FB-FUN-03","Login - email","Email field cannot be empty","A registered Facebook account; internet connected","1. Open the login page
+2. Leave the email field empty
+3. Click Log in","Empty","Email field cannot be empty","","Not Run","High","Functional"
+"FB-FUN-04","Login - email","Error message for a wrong email","A registered Facebook account; internet connected","1. Open the login page
+2. Enter a wrong email
+3. Click Log in","Wrong email","An error message is displayed","","Not Run","Medium","Functional"
+"FB-FUN-05","Login - password","Password field accepts only a valid password","A registered Facebook account; internet connected","1. Open the login page
+2. Enter a valid password","Valid password","Only the valid password is accepted","","Not Run","High","Functional"
+"FB-FUN-06","Login - password","Password field rejects an invalid password","A registered Facebook account; internet connected","1. Open the login page
+2. Enter an invalid password","Invalid password","Invalid password is not accepted","","Not Run","High","Functional"
+"FB-FUN-07","Login - password","Password field cannot be empty","A registered Facebook account; internet connected","1. Open the login page
+2. Leave the password field empty
+3. Click Log in","Empty","Password field cannot be empty","","Not Run","High","Functional"
+"FB-FUN-08","Post creation","Create and publish a text post","A registered Facebook account; internet connected","1. Log in
+2. Open post creation
+3. Type text
+4. Publish","Text: any","Post is created and published","","Not Run","High","Functional"
+"FB-FUN-09","Post creation","Empty post is not published","A registered Facebook account; internet connected","1. Log in
+2. Open post creation
+3. Leave text empty
+4. Try to publish","Empty","Text field cannot be empty and the post is not published","","Not Run","High","Functional"
+"FB-FUN-10","Post creation","Post with image and text","A registered Facebook account; internet connected","1. Log in
+2. Open post creation
+3. Add an image and text
+4. Publish","Image file + text","Post is published with image and text","","Not Run","Medium","Functional"
+"FB-FUN-11","Post creation","Post with video and text","A registered Facebook account; internet connected","1. Log in
+2. Open post creation
+3. Add a video and text
+4. Publish","Video file + text","Post is published with video and text","","Not Run","Medium","Functional"
+"FB-FUN-12","Post creation","Oversized file cannot be uploaded","A registered Facebook account; internet connected","1. Log in
+2. Open post creation
+3. Try to upload a file larger than the allowed size","File above the size limit","Upload is not allowed","","Not Run","Medium","Functional"
+"FB-FUN-13","Comments","Add a comment","A registered Facebook account; internet connected","1. Open a post
+2. Type a comment
+3. Post","Text: any","Comment is added","","Not Run","High","Functional"
+"FB-FUN-14","Comments","Comment accepts alphabets","A registered Facebook account; internet connected","1. Open a post
+2. Comment with alphabets only
+3. Post","Alphabets","Comment is accepted","","Not Run","Medium","Functional"
+"FB-FUN-15","Comments","Comment accepts numbers","A registered Facebook account; internet connected","1. Open a post
+2. Comment with numbers only
+3. Post","Numbers","Comment is accepted","","Not Run","Medium","Functional"
+"FB-FUN-16","Comments","Comment accepts special characters","A registered Facebook account; internet connected","1. Open a post
+2. Comment with special characters
+3. Post","Special characters","Comment is accepted","","Not Run","Medium","Functional"
+"FB-FUN-17","Comments","Empty comment cannot be posted","A registered Facebook account; internet connected","1. Open a post
+2. Leave the comment empty
+3. Try to post","Empty","Comments field cannot be empty before posting","","Not Run","Medium","Functional"
+"FB-FUN-18","Comments","Comment accepts emojis","A registered Facebook account; internet connected","1. Open a post
+2. Comment with emojis
+3. Post","Emojis","Comment is accepted","","Not Run","Low","Functional"
+"FB-FUN-19","Comments","Reply to a comment","A registered Facebook account; internet connected","1. Open a post
+2. Reply to an existing comment
+3. Post","Text: any","Reply is added under the comment","","Not Run","Medium","Functional"
+"FB-FUN-20","Comments","Delete a comment","A registered Facebook account; internet connected","1. Open a post
+2. Delete your comment","Existing comment","Comment is deleted","","Not Run","Medium","Functional"

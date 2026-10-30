@@ -1,0 +1,39 @@
+"ID","Module","Scenario","Preconditions","Steps","Test Data","Expected","Actual","Status","Priority","Type"
+"WORD-ADH-01","File save & recovery","Save a very large document","MS Word installed; sample documents available where needed","1. Open MS Word
+2. Create a new blank document
+3. Type a large amount of text
+4. Save the file","10,000+ words","File saves without lag, corruption or data loss","","Not Run","High","Ad hoc"
+"WORD-ADH-02","Editing & formatting","Undo after deleting all text","MS Word installed; sample documents available where needed","1. Open MS Word
+2. Open an existing document
+3. Select all text
+4. Delete it
+5. Press Ctrl+Z multiple times","Existing document","Each step is undone correctly and content is restored progressively","","Not Run","Medium","Ad hoc"
+"WORD-ADH-03","Editing & formatting","Bold, italic and underline together persist after reopening","MS Word installed; sample documents available where needed","1. Open MS Word
+2. Type a paragraph
+3. Apply Bold, Italic and Underline to the same text
+4. Save and reopen the file","One paragraph","Formatting is retained correctly after reopening","","Not Run","Medium","Ad hoc"
+"WORD-ADH-04","Editing & formatting","Insert a large high-resolution image","MS Word installed; sample documents available where needed","1. Open MS Word
+2. Insert a large high-resolution image into the document","Large high-resolution image","Image is inserted without crashing and renders correctly","","Not Run","Medium","Ad hoc"
+"WORD-ADH-05","Editing & formatting","Track Changes records all edits","MS Word installed; sample documents available where needed","1. Open MS Word
+2. Enable Track Changes
+3. Make multiple edits (add, delete, format text)
+4. Turn off Track Changes
+5. Open the Review tab","Multiple edits","All changes are marked correctly and visible on the Review tab","","Not Run","High","Ad hoc"
+"WORD-ADH-06","File save & recovery","Save As with special characters in the file name","MS Word installed; sample documents available where needed","1. Open MS Word
+2. File
+3. Save As
+4. Try to save with special characters in the file name","File name with special characters","An error is displayed","","Not Run","Medium","Ad hoc"
+"WORD-ADH-07","Compatibility & references","Open a file from an older Word version","MS Word installed; sample documents available where needed","1. Open MS Word
+2. Open a .doc file from an older version","Word 2003 .doc file","File opens in Compatibility Mode without breaking the formatting","","Not Run","Medium","Ad hoc"
+"WORD-ADH-08","Editing & formatting","Synonyms suggestions","MS Word installed; sample documents available where needed","1. Open MS Word
+2. Type a word
+3. Right-click
+4. Select Synonyms","Any word","A relevant list of synonym suggestions appears without delay","","Not Run","Low","Ad hoc"
+"WORD-ADH-09","Compatibility & references","Table of Contents updates after a heading change","MS Word installed; sample documents available where needed","1. Open MS Word
+2. Insert a Table of Contents
+3. Modify a heading in the document
+4. Click Update Table of Contents","Document with headings","Table of Contents reflects the updated heading without manual editing","","Not Run","Medium","Ad hoc"
+"WORD-ADH-10","File save & recovery","AutoRecover after a forced close","MS Word installed; sample documents available where needed","1. Open MS Word
+2. Work on a document for an extended time without saving
+3. Force close the app to simulate a crash
+4. Reopen MS Word","Unsaved document","Word prompts AutoRecover and restores the last saved version of the document","","Not Run","High","Ad hoc"

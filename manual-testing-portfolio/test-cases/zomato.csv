@@ -1,0 +1,116 @@
+"ID","Module","Scenario","Preconditions","Steps","Test Data","Expected","Actual","Status","Priority","Type"
+"ZOM-INT-01","Search & discovery","Saved item appears in Saved items","Registered User A; a second account (User B) for the cross-account checks; internet and location on","1. Log in as User A
+2. Search and select an item
+3. Save it
+4. Check Saved items
+5. Log out A","Item: any","Saved item appears in Saved items","","Not Run","Low","Integration"
+"ZOM-INT-02","Order management","Placed order appears in My orders","Registered User A; a second account (User B) for the cross-account checks; internet and location on","1. Log in as User A
+2. Select an item
+3. Order it and confirm
+4. Check My orders
+5. Log out","Item: any","The item is listed in My orders","","Not Run","High","Integration"
+"ZOM-INT-03","Order management","Order appears on the second account","Registered User A; a second account (User B) for the cross-account checks; internet and location on","1. Log in as User A
+2. Select and order an item
+3. Log out A
+4. Log in as User B
+5. Check the order on screen
+6. Log out B","Item: any","Order appears on User B's screen","","Not Run","High","Integration"
+"ZOM-INT-04","Order management","Cancelled order shows as cancelled","Registered User A; a second account (User B) for the cross-account checks; internet and location on","1. Log in as User A
+2. Select and order an item
+3. Cancel it
+4. Check My orders
+5. Log out A","Item: any","Order is shown as cancelled in My orders","","Not Run","High","Integration"
+"ZOM-INT-05","Order management","Saved address is used for the order","Registered User A; a second account (User B) for the cross-account checks; internet and location on","1. Log in as User A
+2. Go to Profile
+3. Addresses
+4. Enter your address
+5. Select and order an item
+6. Check the address on the order
+7. Log out A","A valid address","The entered address appears on the order","","Not Run","Medium","Integration"
+"ZOM-INT-06","Ratings & support","Rating given by User A appears for User B","Registered User A; a second account (User B) for the cross-account checks; internet and location on","1. Log in as User A
+2. Order an item
+3. Order is delivered
+4. Rate the item or restaurant
+5. Log out A
+6. Log in as User B
+7. Check for A's rating
+8. Log out B","Rating: any","Rating given by User A appears","","Not Run","Medium","Integration"
+"ZOM-INT-07","Payments, wallet & promos","Wallet top-up updates the balance","Registered User A; a second account (User B) for the cross-account checks; internet and location on","1. Log in as User A
+2. Go to wallet
+3. Add money
+4. Verify the balance is updated
+5. Log out","Amount: any valid amount","Wallet balance is updated","","Not Run","High","Integration"
+"ZOM-INT-08","Payments, wallet & promos","Coupon updates the order amount","Registered User A; a second account (User B) for the cross-account checks; internet and location on","1. Log in as User A
+2. Select and order an item
+3. Apply coupon
+4. Check the amount
+5. Log out A","Valid coupon","Amount is updated after the coupon is applied","","Not Run","High","Integration"
+"ZOM-INT-09","Cart & checkout","Item removed from cart stays removed after refresh","Registered User A; a second account (User B) for the cross-account checks; internet and location on","1. Log in as User A
+2. Select and add an item to cart
+3. Go to cart and remove it
+4. Refresh
+5. Check the cart
+6. Log out A","Item: any","Item is removed from the cart and stays removed after refresh","","Not Run","Medium","Integration"
+"ZOM-INT-10","Ratings & support","Support complaint appears on the second account","Registered User A; a second account (User B) for the cross-account checks; internet and location on","1. Log in as User A
+2. Select Support
+3. Write a complaint
+4. Log out A
+5. Log in as User B
+6. Check User A's complaint
+7. Log out B","Complaint text: any","User A's complaint appears","","Not Run","Medium","Integration"
+"ZOM-USA-01","Search & discovery","Search bar is easily accessible","App installed; internet connected (checked on Swiggy and Zomato)","1. Open the app
+2. Look at the top bar","Apps: Swiggy, Zomato","Search bar is easily accessible at the top bar","","Not Run","Medium","Usability"
+"ZOM-USA-02","Search & discovery","Veg and non-veg filter","App installed; internet connected (checked on Swiggy and Zomato)","1. Open the app
+2. Try to filter food items by veg and non-veg","Apps: Swiggy, Zomato","Food items are easy to filter by veg and non-veg","","Not Run","Medium","Usability"
+"ZOM-USA-03","Search & discovery","Recommendations on the home screen","App installed; internet connected (checked on Swiggy and Zomato)","1. Log in
+2. Open the home screen","Apps: Swiggy, Zomato","Recommended food items appear on the home screen","","Not Run","Low","Usability"
+"ZOM-USA-04","Search & discovery","Price, discount and final price shown on the item","App installed; internet connected (checked on Swiggy and Zomato)","1. Open a restaurant or item listing
+2. Review the item card","Apps: Swiggy, Zomato","Item, price, discount and final discounted price are visible on top of the item","","Not Run","Medium","Usability"
+"ZOM-USA-05","Search & discovery","Recent searches are visible","App installed; internet connected (checked on Swiggy and Zomato)","1. Tap the Search bar","Apps: Swiggy, Zomato","Recently searched items are visible","","Not Run","Low","Usability"
+"ZOM-USA-06","Search & discovery","Search results are filtered and sorted effectively","App installed; internet connected (checked on Swiggy and Zomato)","1. Search for an item
+2. Apply filters and sorting","Apps: Swiggy, Zomato","Searched items are filtered and sorted effectively","","Not Run","Medium","Usability"
+"ZOM-USA-07","Search & discovery","Distance and time preview on the item","App installed; internet connected (checked on Swiggy and Zomato)","1. Open the listing with location enabled
+2. Review the item card","Apps: Swiggy, Zomato","'Distance and time' to arrive is previewed on the item based on location","","Not Run","Medium","Usability"
+"ZOM-USA-08","Search & discovery","Save option is easily accessible","App installed; internet connected (checked on Swiggy and Zomato)","1. Open an item
+2. Look for the Save option","Apps: Swiggy, Zomato","'Save' is easily accessible, or on top of the item itself","","Not Run","Low","Usability"
+"ZOM-USA-09","Cart & checkout","Restaurant menu is organised into categories","App installed; internet connected (checked on Swiggy and Zomato)","1. Open a restaurant
+2. Review the menu","Apps: Swiggy, Zomato","Restaurant menu is organised into clear categories","","Not Run","Medium","Usability"
+"ZOM-USA-10","Cart & checkout","Place Order button is immediately available","App installed; internet connected (checked on Swiggy and Zomato)","1. Click on an item
+2. Look for Place Order","Apps: Swiggy, Zomato","Place Order button is immediately available once an item is clicked","","Not Run","Medium","Usability"
+"ZOM-ADH-01","Cart & checkout","Removing all items one by one empties the cart","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Search for a restaurant
+3. Add items to cart
+4. Remove all items one by one","N/A","Cart shows an empty state with 'Your cart is empty' and does not crash","","Not Run","Medium","Ad hoc"
+"ZOM-ADH-02","Cart & checkout","Items from two restaurants in one cart","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Add items from Restaurant A without ordering
+3. Search for Restaurant B
+4. Add items","Two different restaurants","App prompts 'Your cart has items from another restaurant. Do you want to clear it?'","","Not Run","High","Ad hoc"
+"ZOM-ADH-03","Payments, wallet & promos","Promo removed when the minimum order value is no longer met","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Select a restaurant
+3. Apply a promo code
+4. Remove the item needed to meet the minimum order value","Promo with a minimum order value","Promo is removed automatically and a message is displayed","","Not Run","High","Ad hoc"
+"ZOM-ADH-04","Order management","Order placed, then internet lost","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Place an order
+3. Turn off internet immediately after
+4. Reopen the app with internet","Internet: off, then on","Order status is shown correctly and no duplicate order is placed","","Not Run","High","Ad hoc"
+"ZOM-ADH-05","Payments, wallet & promos","Invalid UPI ID","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Go to checkout
+3. Enter an invalid UPI ID
+4. Click Pay","Invalid UPI ID, e.g. @xyz123","'Invalid UPI ID' is displayed","","Not Run","High","Ad hoc"
+"ZOM-ADH-06","Location services","GPS turned off while searching","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Search for a dish
+3. Turn off GPS","Dish: Biryani; GPS: off","App either uses the last known location or prompts the user to enable location","","Not Run","Medium","Ad hoc"
+"ZOM-ADH-07","Order management","Cancel a COD order after the restaurant accepts it","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Place a COD order
+3. Attempt to cancel after the restaurant has accepted it","Payment: COD","App clearly displays the cancellation policy and whether a penalty applies","","Not Run","Medium","Ad hoc"
+"ZOM-ADH-08","Cart & checkout","Quantity above the per-item limit","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Add the maximum quantity of a single item allowed
+3. Try to increase quantity beyond the limit","Quantity: limit and limit + 1","A message such as 'Maximum quantity reached' is displayed","","Not Run","Medium","Ad hoc"
+"ZOM-ADH-09","Order management","Reorder with unavailable items","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Go to Past orders
+3. Click Reorder on a very old order that has menu items no longer available","Old order with unavailable items","App notifies which items are unavailable instead of skipping them","","Not Run","Medium","Ad hoc"
+"ZOM-ADH-10","Cart & checkout","Idle at checkout","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Add items to cart
+3. Go to checkout
+4. Leave the app idle for a long time
+5. Return to the app","Idle: long duration","Cart items and session are still intact and not reset","","Not Run","Medium","Ad hoc"

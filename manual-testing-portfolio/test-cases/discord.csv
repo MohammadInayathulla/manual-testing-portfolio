@@ -1,0 +1,69 @@
+"ID","Module","Scenario","Preconditions","Steps","Test Data","Expected","Actual","Status","Priority","Type"
+"DIS-FUN-01","User authentication","Login with a valid registered email","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Open the login page
+2. Enter valid email and password
+3. Log in","Valid registered email","User logs in successfully","","Not Run","High","Functional"
+"DIS-FUN-02","User authentication","Login with an invalid email","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Open the login page
+2. Enter an invalid email
+3. Log in","Invalid email","User cannot log in","","Not Run","High","Functional"
+"DIS-FUN-03","User authentication","Email field cannot be empty","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Open the login page
+2. Leave email empty
+3. Log in","Empty","Email field cannot be empty","","Not Run","High","Functional"
+"DIS-FUN-04","User authentication","Error message for an incorrect email","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Open the login page
+2. Enter an incorrect email
+3. Log in","Incorrect email","An error message is shown","","Not Run","Medium","Functional"
+"DIS-FUN-05","User authentication","Login fails for an incorrect password","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Open the login page
+2. Enter valid email and wrong password
+3. Log in","Wrong password","Login fails","","Not Run","High","Functional"
+"DIS-FUN-06","User authentication","Login succeeds with a valid password","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Open the login page
+2. Enter valid email and valid password
+3. Log in","Valid password","Login is successful","","Not Run","High","Functional"
+"DIS-FUN-07","Server & channel","Create a new server with a name","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Log in
+2. Create a new server
+3. Enter a name","Server name: any","Server is created","","Not Run","High","Functional"
+"DIS-FUN-08","Server & channel","Server creator becomes Admin","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Create a new server
+2. Check the creator's role","N/A","Server creator is automatically assigned as Admin","","Not Run","Medium","Functional"
+"DIS-FUN-09","Server & channel","Server name cannot be empty","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Create a new server
+2. Leave the name empty","Empty","Server field does not accept an empty value","","Not Run","Medium","Functional"
+"DIS-FUN-10","Server & channel","Admin creates a text channel","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. As Admin
+2. Create a new text channel inside a server","Channel name: any","Text channel is created","","Not Run","High","Functional"
+"DIS-FUN-11","Server & channel","Admin creates a voice channel","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. As Admin
+2. Create a new voice channel inside a server","Channel name: any","Voice channel is created","","Not Run","High","Functional"
+"DIS-FUN-12","Server & channel","Channel name with spaces or special characters","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. As Admin
+2. Create a channel with spaces or special characters in the name","Name with spaces and special characters","Channel name should not contain spaces or special characters","","Not Run","Medium","Functional"
+"DIS-FUN-13","Server & channel","Deleted channel is removed","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. As Admin
+2. Delete a channel
+3. Check the server","Existing channel","Deleted channel is removed from the server","","Not Run","Medium","Functional"
+"DIS-FUN-14","Messaging","Send a text message","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Open a channel
+2. Type a message
+3. Send","Text: any","Message is sent in the channel","","Not Run","High","Functional"
+"DIS-FUN-15","Messaging","Empty message cannot be sent","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Open a channel
+2. Leave the message empty
+3. Try to send","Empty","Empty message cannot be sent","","Not Run","Medium","Functional"
+"DIS-FUN-16","Messaging","Send a file attachment","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Open a channel
+2. Attach a file (image, PDF etc.)
+3. Send","Image, PDF","File is uploaded and sent in the channel","","Not Run","Medium","Functional"
+"DIS-FUN-17","Messaging","File above the upload size limit","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Open a channel
+2. Attach a file above the size limit
+3. Send","File above 25 MB (per the handwritten case)","File is not sent","","Not Run","Medium","Functional"
+"DIS-FUN-18","Messaging","Edit a message","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Send a message
+2. Edit it","Existing message","Message is edited","","Not Run","Medium","Functional"
+"DIS-FUN-19","Messaging","Delete a message","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Send a message
+2. Delete it","Existing message","Sent message is deleted","","Not Run","Medium","Functional"
+"DIS-FUN-20","Messaging","Send emojis","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Open a channel
+2. Send emojis","Emojis","Emojis are sent","","Not Run","Low","Functional"
+"DIS-FUN-21","Voice & video","Join a voice channel","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Open a voice channel
+2. Join","N/A","User joins the voice channel","","Not Run","High","Functional"
+"DIS-FUN-22","Voice & video","Mute microphone","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Join a voice channel
+2. Mute the microphone","Second participant present","Other participants cannot hear the user","","Not Run","High","Functional"
+"DIS-FUN-23","Voice & video","Mute icon displays correctly","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Join a voice channel
+2. Mute the microphone
+3. Check the icon","N/A","Mute icon is displayed correctly","","Not Run","Low","Functional"
+"DIS-FUN-24","Voice & video","Share screen in a voice channel","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Join a voice channel
+2. Start screen share","N/A","User can share their screen","","Not Run","Medium","Functional"
+"DIS-FUN-25","Voice & video","Participants can view the shared screen","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Share the screen
+2. Check from the participant's account","Second participant present","All other participants can view the shared screen","","Not Run","Medium","Functional"
+"DIS-FUN-26","Voice & video","Stopping screen share stops it for everyone","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Share the screen
+2. Stop sharing
+3. Check from the participant's account","Second participant present","Screen sharing stops for all participants","","Not Run","Medium","Functional"
+"DIS-FUN-27","Voice & video","Ending the call disconnects everyone","A registered Discord account; internet connected; a second participant account for voice and screen-share checks","1. Join a voice channel with a participant
+2. End the call","Second participant present","Ending the call disconnects both the user and participants","","Not Run","Medium","Functional"

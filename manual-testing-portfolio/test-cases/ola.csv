@@ -1,0 +1,130 @@
+"ID","Module","Scenario","Preconditions","Steps","Test Data","Expected","Actual","Status","Priority","Type"
+"OLA-INT-01","Ride booking & lifecycle","End-to-end booking, acceptance and completion","Two registered accounts: User A (rider) and User B (driver); internet and location services on","1. Log in as User A
+2. Enter pickup and drop locations
+3. Select ride type
+4. Confirm booking
+5. Log out A
+6. Log in as User B
+7. Accept ride
+8. Complete ride
+9. Verify payment is deducted
+10. Check receipt in ride history
+11. Log out B","Ride type: any available","Payment is deducted and a receipt is generated in ride history","","Not Run","High","Integration"
+"OLA-INT-02","Ride booking & lifecycle","Ride starts with the OTP shared by the rider","Two registered accounts: User A (rider) and User B (driver); internet and location services on","1. Log in as User A
+2. Book a ride
+3. Driver is assigned
+4. Log out A
+5. Log in as User B
+6. Enter OTP shared by A
+7. Check ride status
+8. Log out B","Valid OTP from User A","'Ride started' status is shown successfully","","Not Run","High","Integration"
+"OLA-INT-03","Ride booking & lifecycle","Cancel a ride while it is still searching","Two registered accounts: User A (rider) and User B (driver); internet and location services on","1. Log in as User A
+2. Book a ride
+3. Wait for ride search to start
+4. Immediately click Cancel
+5. Check for pop-up
+6. Log out A","N/A","'Reason for cancel' pop-up appears","","Not Run","Medium","Integration"
+"OLA-INT-04","Payments, wallet & promos","Voucher discount carries through to the final fare","Two registered accounts: User A (rider) and User B (driver); internet and location services on","1. Log in as User A
+2. Book a ride
+3. Apply voucher code
+4. Verify discounted fare is shown
+5. Complete ride
+6. Verify final fare
+7. Log out A","Valid voucher code","Discounted fare is shown and the final fare equals the discounted fare","","Not Run","High","Integration"
+"OLA-INT-05","Ride booking & lifecycle","Schedule a ride for a future time","Two registered accounts: User A (rider) and User B (driver); internet and location services on","1. Log in as User A
+2. Go to Schedule Ride
+3. Set a future date and time
+4. Confirm booking
+5. Check the ride is booked once the scheduled time arrives
+6. Log out A","Future date and time","Ride is booked at the scheduled time","","Not Run","Medium","Integration"
+"OLA-INT-06","Payments, wallet & promos","Tip updates the rider's total amount","Two registered accounts: User A (rider) and User B (driver); internet and location services on","1. Log in as User A
+2. Book a ride
+3. Add a tip
+4. Check total amount (fare + tip)
+5. Log out A","Tip: any amount","Total amount is updated to fare + tip","","Not Run","Medium","Integration"
+"OLA-INT-07","Payments, wallet & promos","Tip is reflected on the driver side","Two registered accounts: User A (rider) and User B (driver); internet and location services on","1. Log in as User A
+2. Book a ride
+3. Add a tip
+4. Log out A
+5. Log in as User B
+6. Check (fare + tip) amount
+7. Log out B","Tip: any amount","Driver sees the updated amount (fare + tip)","","Not Run","Medium","Integration"
+"OLA-INT-08","Ratings & feedback","Driver rating updates on the driver's profile","Two registered accounts: User A (rider) and User B (driver); internet and location services on","1. Log in as User A
+2. Book and complete a ride
+3. Rate the driver (4 stars)
+4. Log out A
+5. Log in as User B
+6. Go to Profile
+7. Check rating
+8. Log out B","Rating: 4 stars","Driver's profile rating is updated","","Not Run","Medium","Integration"
+"OLA-INT-09","Payments, wallet & promos","Wallet top-up updates the balance","Two registered accounts: User A (rider) and User B (driver); internet and location services on","1. Log in as User A
+2. Go to wallet
+3. Click Add money
+4. Enter amount
+5. Confirm
+6. Check updated wallet balance
+7. Log out A","Amount: any valid amount","Wallet balance is updated","","Not Run","High","Integration"
+"OLA-INT-10","Ride booking & lifecycle","Rider's message reaches the driver","Two registered accounts: User A (rider) and User B (driver); internet and location services on","1. Log in as User A
+2. Book a ride
+3. Once the ride is booked, send a message to the driver
+4. Log out A
+5. Log in as User B
+6. Check for the message from A
+7. Log out B","Message: 'Waiting at pickup'","Message from User A appears for the driver","","Not Run","Low","Integration"
+"OLA-USA-01","Registration & login","Registration screen is clean and easy to understand","App installed; internet connected (checked on Ola and Uber)","1. Open the app
+2. Go to the registration screen
+3. Review layout and labels","Apps: Ola, Uber","Registration screen is clean, uncluttered and easy for the user to understand","","Not Run","Medium","Usability"
+"OLA-USA-02","Registration & login","Phone number field opens a numeric keypad","App installed; internet connected (checked on Ola and Uber)","1. Open the registration screen
+2. Tap the phone number field","Apps: Ola, Uber","Numeric keypad is displayed automatically","","Not Run","Medium","Usability"
+"OLA-USA-03","Registration & login","Phone number field accepts exactly 10 digits","App installed; internet connected (checked on Ola and Uber)","1. Open the registration screen
+2. Enter 9, 10 and 11 digit numbers in turn","9, 10 and 11 digits (boundary values)","Field accepts exactly 10 digits","","Not Run","High","Usability"
+"OLA-USA-04","Registration & login","Resend OTP option is visible and working","App installed; internet connected (checked on Ola and Uber)","1. Request an OTP
+2. Look for the Resend OTP option
+3. Tap it","Apps: Ola, Uber","Resend OTP is visible and sends a new OTP","","Not Run","Medium","Usability"
+"OLA-USA-05","Registration & login","Warning messages for wrong phone number, password and OTP","App installed; internet connected (checked on Ola and Uber)","1. Enter a wrong phone number, then a wrong password, then a wrong OTP","Invalid values for each field","A proper warning message is displayed for each wrong entry","","Not Run","High","Usability"
+"OLA-USA-06","Home & navigation","Left navigation pane has all required features","App installed; internet connected (checked on Ola and Uber)","1. Log in
+2. Open the left navigation pane
+3. Review the options","Apps: Ola, Uber","All required features are available in the navigation pane","","Not Run","Medium","Usability"
+"OLA-USA-07","Home & navigation","Home screen has a 'Search Destination' bar","App installed; internet connected (checked on Ola and Uber)","1. Log in
+2. Open the home screen","Apps: Ola, Uber","'Search Destination' bar is available for quick access","","Not Run","Medium","Usability"
+"OLA-USA-08","Ride details & profile","All ride details appear in one place after booking","App installed; internet connected (checked on Ola and Uber)","1. Book a ride
+2. Review the ride screen","Apps: Ola, Uber","Fare, pickup and drop location, OTP and driver details appear in one place","","Not Run","High","Usability"
+"OLA-USA-09","Home & navigation","No alignment issues","App installed; internet connected (checked on Ola and Uber)","1. Open each main screen
+2. Check alignment of text, buttons and images","Apps: Ola, Uber","There are no alignment issues","","Not Run","Low","Usability"
+"OLA-USA-10","Ride details & profile","Profile has all the user's details","App installed; internet connected (checked on Ola and Uber)","1. Log in
+2. Open Profile
+3. Review the details","Apps: Ola, Uber","Profile shows all the details of the user","","Not Run","Low","Usability"
+"OLA-ADH-01","Ride booking & lifecycle","Wrong OTP is rejected","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Enter pickup and drop locations
+3. Book a ride
+4. Use a wrong OTP","Wrong OTP","'Invalid OTP' is displayed","","Not Run","High","Ad hoc"
+"OLA-ADH-02","Payments, wallet & promos","Wallet with zero balance cannot be used for payment","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Ensure wallet balance is 0
+3. Book a ride
+4. Select payment as wallet","Wallet balance: 0","A warning message is displayed","","Not Run","High","Ad hoc"
+"OLA-ADH-03","Location services","Booking without location services enabled","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Turn off location services
+3. Enter pickup and drop locations","Location services: off","A warning message is displayed","","Not Run","Medium","Ad hoc"
+"OLA-ADH-04","Ride booking & lifecycle","Immediate cancellation returns to home","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Book a ride
+3. Immediately cancel the ride","N/A","App returns to the Home page","","Not Run","Medium","Ad hoc"
+"OLA-ADH-05","Ride booking & lifecycle","Same pickup and drop location","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Enter the same location for pickup and drop
+3. Click Book","Pickup = drop","A warning says pickup and drop cannot be the same","","Not Run","High","Ad hoc"
+"OLA-ADH-06","Ride booking & lifecycle","Airplane mode after a driver is assigned","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Book a ride
+3. Driver is assigned
+4. Turn on Airplane mode","Airplane mode: on","A 'no internet connection' message is displayed and the app does not crash","","Not Run","High","Ad hoc"
+"OLA-ADH-07","Payments, wallet & promos","Expired promo code at checkout","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Apply an expired promo code at checkout","Expired promo code","'Invalid or Expired coupon' is displayed and no discount is applied","","Not Run","High","Ad hoc"
+"OLA-ADH-08","Ride booking & lifecycle","Driver accepted but does not arrive","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Book a ride
+3. Driver accepts
+4. Driver does not arrive for a long time","N/A","App shows 'Driver is taking longer than expected' with an option to cancel for free","","Not Run","Medium","Ad hoc"
+"OLA-ADH-09","Payments, wallet & promos","Zero or negative amount in Add money","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Go to Ola Money wallet
+3. Enter 0 or a negative amount in Add money","0 and a negative amount","App does not proceed and displays an error","","Not Run","High","Ad hoc"
+"OLA-ADH-10","Ratings & feedback","Rating without selecting stars","Registered User A; internet and location services on unless the scenario says otherwise","1. Log in as User A
+2. Book a ride
+3. Complete the ride
+4. Try to submit a rating without selecting any stars","No stars selected","Submission is not allowed and the user is prompted to select at least one star","","Not Run","Medium","Ad hoc"
