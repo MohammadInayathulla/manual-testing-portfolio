@@ -2,7 +2,7 @@
 
 Test documentation I authored while training in manual software testing: **137 test cases** across five widely used apps (Ola, Zomato, MakeMyTrip, Facebook, Discord) plus Microsoft Word, covering integration, functional, usability and ad hoc testing.
 
-> **Disclaimer.** This is a learning portfolio. It is not affiliated with, endorsed by or sponsored by any of the companies named. Test cases are written from publicly visible app behaviour. Expected results reflect what I expected at the time and may differ from current app behaviour.
+> **Disclaimer.** This is a learning portfolio. It is not affiliated with, endorsed by or sponsored by any of the companies named. These test cases were written as test-design exercises from my understanding of how such apps typically behave. They have not been executed against the live apps, so expected results may differ from current app behaviour.
 
 ## What is inside
 
@@ -45,7 +45,7 @@ screenshots/                                    evidence (to be added)
 
 ## Status
 
-Test cases are authored and reviewed. Execution results (`Actual` and `Status`) are being recorded; cases still show `Not Run` until executed. Defects will be added under `bug-reports/` only when a real defect is reproduced.
+This repository is a **test design** deliverable: scenarios, steps, test data and expected results. Nothing has been executed yet, so `Actual` is blank and `Status` is `Not Run` for every case. When I execute a case I will record the real result and, for any real defect, add a report under `bug-reports/`.
 
 ## Author
 
